@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__SQX_Approval_Matrix__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Refers approval matrix that will be used for approving NC.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Approval matrix containing the approval steps to be used for the NC.</inlineHelpText>
+    <label>Approval Matrix</label>
+    <lookupFilter>
+        <active>true</active>
+        <description>Lookup filter to filter out only Approval Matrix of record type Nonconformance.</description>
+        <filterItems>
+            <field>compliancequest__SQX_Approval_Matrix__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Nonconformance</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>compliancequest__SQX_Approval_Matrix__c</referenceTo>
+    <relationshipLabel>Nonconformance</relationshipLabel>
+    <relationshipName>SQX_Nonconformance</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

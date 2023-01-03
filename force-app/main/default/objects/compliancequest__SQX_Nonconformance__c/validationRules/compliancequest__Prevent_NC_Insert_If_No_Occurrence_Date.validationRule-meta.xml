@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Prevent_NC_Insert_If_No_Occurrence_Date</fullName>
+    <active>true</active>
+    <description>This validation rule prevents insertion of NC record if Occurrence Date is blank.</description>
+    <errorConditionFormula>AND(
+NOT($Permission.compliancequest__SQXDataMigrationCustomPermission),
+ISBLANK( compliancequest__Occurrence_Date__c )
+)</errorConditionFormula>
+    <errorMessage>Occurrence Date cannot be blank.</errorMessage>
+</ValidationRule>

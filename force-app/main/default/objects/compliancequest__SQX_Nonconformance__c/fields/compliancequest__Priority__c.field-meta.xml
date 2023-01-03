@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Priority__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Amount of attention/urgency the NC requires, ranging from low to high.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Priority selected indicates the urgency of this NC.</inlineHelpText>
+    <label>Priority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 - Low</fullName>
+                <default>false</default>
+                <label>1 - Low</label>
+            </value>
+            <value>
+                <fullName>2 - Medium</fullName>
+                <default>false</default>
+                <label>2 - Medium</label>
+            </value>
+            <value>
+                <fullName>3 - High</fullName>
+                <default>false</default>
+                <label>3 - High</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

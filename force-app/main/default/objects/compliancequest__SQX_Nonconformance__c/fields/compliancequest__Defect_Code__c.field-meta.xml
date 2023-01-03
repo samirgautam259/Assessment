@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Defect_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defect code field that can be entered manually.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please add a defect code, if one can not be found using lookup. Note: If lookup is selected, it always overwrites the value in this field.</inlineHelpText>
+    <label>Defect / Failure</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

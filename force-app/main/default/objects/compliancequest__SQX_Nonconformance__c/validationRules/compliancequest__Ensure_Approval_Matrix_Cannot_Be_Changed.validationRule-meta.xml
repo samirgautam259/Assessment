@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Ensure_Approval_Matrix_Cannot_Be_Changed</fullName>
+    <active>true</active>
+    <description>This validation rule ensures that the Approval Matrix field in Nonconformance cannot be changed or removed after the record is initiated.</description>
+    <errorConditionFormula>AND( NOT($Permission.compliancequest__SQXDataMigrationCustomPermission), 
+NOT(ISPICKVAL(compliancequest__Status__c, &apos;Draft&apos;)),
+OR(
+ISCHANGED( compliancequest__SQX_Approval_Matrix__c ),
+AND(
+NOT(ISBLANK(PRIORVALUE(compliancequest__SQX_Approval_Matrix__c))),
+ISBLANK(compliancequest__SQX_Approval_Matrix__c )
+)
+
+)
+)</errorConditionFormula>
+    <errorMessage>Unable to perform action in the current status.</errorMessage>
+</ValidationRule>

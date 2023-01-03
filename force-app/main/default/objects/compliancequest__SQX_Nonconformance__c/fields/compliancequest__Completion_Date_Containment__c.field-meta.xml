@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Completion_Date_Containment__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Records when a containment was first submitted and accepted.(completed or completed-approved)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date the Containment was completed.</inlineHelpText>
+    <label>Containment Completion Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

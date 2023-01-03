@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__SQX_Department__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Used to record the ID of the queue which is responsible for triaging and analyzing this NC. Since, SF doesn&apos;t support a lookup on Queue, this text field will store queue&apos;s ID. Once a record is submitted for further processing the owner of the record will be changed to the this fields value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The department that is responsible for the NC.</inlineHelpText>
+    <label>Department</label>
+    <referenceTo>compliancequest__SQX_Department__c</referenceTo>
+    <relationshipLabel>Nonconformance</relationshipLabel>
+    <relationshipName>SQX_Nonconformance</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

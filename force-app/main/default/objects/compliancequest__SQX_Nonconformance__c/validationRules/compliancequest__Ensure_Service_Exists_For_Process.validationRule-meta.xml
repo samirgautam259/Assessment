@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Ensure_Service_Exists_For_Process</fullName>
+    <active>true</active>
+    <description>This validation rule ensures that Service is Provided for Issue Type Process.</description>
+    <errorConditionFormula>AND( NOT($Permission.compliancequest__SQXDataMigrationCustomPermission), ISBLANK(compliancequest__SQX_Service__c), ISPICKVAL(compliancequest__Type_Of_Issue__c, &apos;Process&apos;))</errorConditionFormula>
+    <errorMessage>Service is required for Issue Type Process.</errorMessage>
+</ValidationRule>

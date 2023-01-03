@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Disposition_Approval__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Records whether approval for disposition is required or not.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if an approval is required for Disposition.</inlineHelpText>
+    <label>Disposition Approval Required?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

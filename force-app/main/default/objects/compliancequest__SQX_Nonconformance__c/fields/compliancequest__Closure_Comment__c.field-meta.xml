@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Closure_Comment__c</fullName>
+    <deprecated>false</deprecated>
+    <description>the final say regarding the NonConformance&apos;s resolution etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Additional Information relating to the closure of NC</inlineHelpText>
+    <label>Comments</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

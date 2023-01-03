@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Title__c</fullName>
+    <deprecated>false</deprecated>
+    <description>[DEPRECATED] The title of the NC, which is the same as the primary finding&apos;s title, hence a formula field</description>
+    <externalId>false</externalId>
+    <formula>compliancequest__SQX_Finding__r.compliancequest__Title__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Title</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

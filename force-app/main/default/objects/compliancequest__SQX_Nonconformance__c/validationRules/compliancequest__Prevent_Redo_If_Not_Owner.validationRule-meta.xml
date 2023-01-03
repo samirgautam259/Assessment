@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Prevent_Redo_If_Not_Owner</fullName>
+    <active>true</active>
+    <description>This validation rule prevents redo investigation if user is not owner</description>
+    <errorConditionFormula>AND( NOT($Permission.compliancequest__SQXDataMigrationCustomPermission), 
+   compliancequest__Activity_Code__c = &apos;reopeninvestigation&apos;,
+   NOT($User.Id = OwnerId )
+)</errorConditionFormula>
+    <errorMessage>Only NC Owner is allowed to Redo Investigation.</errorMessage>
+</ValidationRule>

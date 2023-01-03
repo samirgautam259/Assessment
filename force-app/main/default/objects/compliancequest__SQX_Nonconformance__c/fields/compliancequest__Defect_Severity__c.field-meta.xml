@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Defect_Severity__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The severity of the defect.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Severity selected indicates the degree of impact.</inlineHelpText>
+    <label>Defect Severity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 - Negligible</fullName>
+                <default>false</default>
+                <label>1 - Negligible</label>
+            </value>
+            <value>
+                <fullName>2 - Low</fullName>
+                <default>false</default>
+                <label>2 - Low</label>
+            </value>
+            <value>
+                <fullName>3 - Moderate</fullName>
+                <default>false</default>
+                <label>3 - Moderate</label>
+            </value>
+            <value>
+                <fullName>4 - Significant</fullName>
+                <default>false</default>
+                <label>4 - Significant</label>
+            </value>
+            <value>
+                <fullName>5 - Catastrophic</fullName>
+                <default>false</default>
+                <label>5 - Catastrophic</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

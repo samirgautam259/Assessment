@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Containment_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, it indicates that Finding requires Containment.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if immediate Containment Actions are required. When checked, at least one containment action must be added to the response.</inlineHelpText>
+    <label>Containment Required?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

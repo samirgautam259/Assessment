@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Risk_Level__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Computes the value of Risk Level using Severity and Probability i.e. Risk Level = Severity * Probability</description>
+    <externalId>false</externalId>
+    <formula>VALUE(LEFT(TEXT( compliancequest__Severity__c), 1)) * VALUE(LEFT(TEXT( compliancequest__Probability__c ), 1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Risk Level</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

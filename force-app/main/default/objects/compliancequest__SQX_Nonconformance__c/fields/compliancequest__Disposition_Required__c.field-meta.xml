@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Disposition_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Records whether this NC needs/requires a disposition.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the Disposition is required. When checked atleast one Disposition must be performed and all the Impacted Part/Lot quantity must be dispositioned.</inlineHelpText>
+    <label>Disposition Required?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

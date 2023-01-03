@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Overdue_Investigation_Days__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Reporting field used to show the number of days a finding&apos;s investigation was overdue by. Negative values indicate submission before due date</description>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL( compliancequest__Completion_Date_Investigation__c ), 
+Today(), 
+compliancequest__Completion_Date_Investigation__c 
+)-  compliancequest__Due_Date_Investigation__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Overdue Investigation Days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

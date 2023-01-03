@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Rating__c</fullName>
+    <deprecated>false</deprecated>
+    <description>It is the rating given by the customer to the supplier on his resolution of the Finding. It ranges from 1-5 where 1 is considered as ineffective and 5 is considered as ineffective.</description>
+    <externalId>false</externalId>
+    <label>Rating</label>
+    <precision>1</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

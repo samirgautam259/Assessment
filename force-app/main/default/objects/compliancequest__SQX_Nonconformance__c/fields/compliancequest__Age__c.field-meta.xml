@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Age__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field returns the number of days, this NC was open for. i.e. Day when status changed to open - Day when status changed to closed.</description>
+    <externalId>false</externalId>
+    <formula>/*Except NC that is void, or draft all NC have age */
+
+IF( ISBLANK(compliancequest__Open_Date__c), 0,  /* if NC does not have open date, it hasn&apos;t been opened */
+    
+    (IF(ISPICKVAL(compliancequest__Status__c, &apos;Void&apos;), 0, 
+        
+            (IF(ISBLANK(compliancequest__Reopen_Date__c),
+
+                 /* else it  min(today,close date) - open date */
+                 /* if the NC has no reopen date that means nc is not reopened so NC as is calculated as closed_date - opened_date */
+                 IF( ISBLANK(compliancequest__Close_Date__c), Today(), compliancequest__Close_Date__c) - compliancequest__Open_Date__c,
+                 /* if the NC has reopen date that means nc is reopened , so NC age is calculated as closed_date - reopended_date + age_before_Reopen */
+                 IF( ISBLANK(compliancequest__Close_Date__c), Today(), compliancequest__Close_Date__c) - compliancequest__Reopen_Date__c + compliancequest__Age_Before_Reopen__c
+
+                )
+            )
+        )
+     )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
