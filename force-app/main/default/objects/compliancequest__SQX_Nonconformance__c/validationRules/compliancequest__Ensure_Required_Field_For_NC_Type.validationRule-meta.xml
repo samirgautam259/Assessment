@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>compliancequest__Ensure_Required_Field_For_NC_Type</fullName>
-    <active>false</active>
-    <description>This rule ensure that the required field are entered while entering NC Type</description>
-    <errorConditionFormula>false</errorConditionFormula>
-    <errorMessage>Required field missing for this NC Type</errorMessage>
-</ValidationRule>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>compliancequest__Disposition_due_date_is_missing</fullName>
-    <active>true</active>
-    <description>Enforce due date to be entered when disposition is required</description>
-    <errorConditionFormula>AND( NOT($Permission.compliancequest__SQXDataMigrationCustomPermission), IF(compliancequest__Disposition_Required__c,  ISBLANK( compliancequest__Due_Date_Disposition__c ) , false))</errorConditionFormula>
-    <errorDisplayField>compliancequest__Due_Date_Disposition__c</errorDisplayField>
-    <errorMessage>Disposition Due Date is required</errorMessage>
-</ValidationRule>

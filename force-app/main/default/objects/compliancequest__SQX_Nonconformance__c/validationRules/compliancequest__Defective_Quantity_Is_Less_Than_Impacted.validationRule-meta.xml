@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>compliancequest__Defective_Quantity_Is_Less_Than_Impacted</fullName>
-    <active>true</active>
-    <description>Defective Quantity is less than or equals to Impacted Part/Lot quantity.</description>
-    <errorConditionFormula>AND( NOT($Permission.compliancequest__SQXDataMigrationCustomPermission), compliancequest__Defective_Quantity__c &gt;  compliancequest__Lot_Quantity__c)</errorConditionFormula>
-    <errorMessage>Defective Quantity is greater than Lot Quantity.</errorMessage>
-</ValidationRule>
